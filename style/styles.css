@@ -29,7 +29,7 @@ ul {
   --hero-button-background: #4d5ae5;
   --section-comand-background: #f4f4fd;
   --section-button-text: #4d5ae5;
-  --acent-border-collor: #e7e9fc;
+  --acent-border-collor: #f4f4fd;
 }
 body {
   color: var(--primary-text-color);
@@ -51,7 +51,6 @@ body {
 .header-navigation {
   align-items: center;
   display: flex;
-  margin-right: 332px;
 }
 .header-logo {
   margin-right: 76px;
@@ -74,6 +73,7 @@ body {
   margin: 0px;
   padding: 0px;
   display: flex;
+  margin-left: auto;
 }
 .header-item {
   font-weight: 500;
@@ -134,7 +134,7 @@ body {
 .hero {
   background: var(--primary-text-color);
   text-align: center;
-  padding: 188px 473px;
+  padding: 188px 0;
 }
 .hero-list {
   list-style: none;
@@ -240,6 +240,7 @@ body {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+  border: transparent;
   color: var(--white-text-color);
 }
 .section-button:focus {
@@ -247,17 +248,13 @@ body {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+  border: transparent;
   color: var(--white-text-color);
 }
 .section-image {
-  background: linear-gradient(
-      0deg,
-      rgba(77, 90, 229, 0.1),
-      rgba(77, 90, 229, 0.1)
-    ),
-    url(2368.jpg);
-  background-blend-mode: soft-light, normal;
-  border: 1px solid #e7e9fc;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .section-images {
@@ -287,14 +284,16 @@ body {
 }
 
 .portfolio-paragraf {
-  border-left: 1px solid var(--acent-border-collor);
-  border-bottom: 1px solid var(--acent-border-collor);
-  border-right: 1px solid var(--acent-border-collor);
+  border-left: 0.5px solid var(--acent-border-collor);
+  border-bottom: 0.5px solid var(--acent-border-collor);
+  border-right: 0.5px solid var(--acent-border-collor);
   padding: 32px 0px;
 }
 
 .footer {
   background: var(--hero-background-color);
+  padding-top: 138px;
+  padding-bottom: 100px;
 }
 .footer-logo {
   font-family: "Raleway", sans-serif;
@@ -308,7 +307,6 @@ body {
 
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  padding-top: 100px;
 }
 .footer-logos {
   color: var(--footer-logos);
@@ -327,6 +325,10 @@ body {
 .section-item {
   list-style: none;
   background: var(--primary-background-color);
+}
+
+.item-basis {
+  flex-basis: calc(100% / 3);
 }
 
 .section-item + .section-item {

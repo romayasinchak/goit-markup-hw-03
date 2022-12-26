@@ -239,8 +239,7 @@ body {
   background: var(--hover-focus-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  border: transparent;
+  border-color: transparent;
   color: var(--white-text-color);
 }
 .section-button:focus {
@@ -251,11 +250,13 @@ body {
   border: transparent;
   color: var(--white-text-color);
 }
-.section-image {
+
+img {
   display: block;
   max-width: 100%;
   height: auto;
 }
+
 
 .section-images {
   background: url(man-with-laptop-presenting-something.jpg);
@@ -287,7 +288,7 @@ body {
   border-left: 0.5px solid var(--acent-border-collor);
   border-bottom: 0.5px solid var(--acent-border-collor);
   border-right: 0.5px solid var(--acent-border-collor);
-  padding: 32px 0px;
+  padding: 32px 16px;
 }
 
 .footer {
